@@ -13,7 +13,7 @@ It's a list of PowerShell cmdlets that connect directly to the
   
 # Getting Started
 ## Setup
-Install the Microsoft.Graph.Intune module from: https://www.powershellgallery.com/packages/Microsoft.Graph.Intune
+Install the Microsoft.Graph.Intune module from: https://www.powershellgallery.com/packages/Microsoft.Graph.Intune 
 (Run as Administrator)
 ```PowerShell
 Install-Module -Name Microsoft.Graph.Intune
