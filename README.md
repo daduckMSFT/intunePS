@@ -5,16 +5,16 @@
 - [Getting Started](#Getting-Started)
   - [Setup](#Setup)
   
-  # Intro
-  I'm David, and this is a quick repo / self-reference "wiki" of sorts (more info will be added to the 'Wiki' for this repo!
+# Intro
+This is a quick repo / self-reference "wiki" of sorts (more info will be added to the 'Wiki' for this repo!
   
-  # What is the Intune PowerShell SDK
-  It's a list of PowerShell cmdlets that connect directly to the 
+# What is the Intune PowerShell SDK
+It's a list of PowerShell cmdlets that connect directly to the 
   
-  # Getting Started
-  ## Setup
-  Install the Microsoft.Graph.Intune module from: https://www.powershellgallery.com/packages/Microsoft.Graph.Intune
+# Getting Started
+## Setup
+Install the Microsoft.Graph.Intune module from: https://www.powershellgallery.com/packages/Microsoft.Graph.Intune
+(Run as Administrator)
 ```PowerShell
 Install-Module -Name Microsoft.Graph.Intune
 ```
-  
