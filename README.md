@@ -54,6 +54,6 @@ If you want to filter this list to be smaller, or you know what you are looking 
 For example - I want a nice table of commands that are related to certificates. 
 
 ```PowerShell
-Get-Command -Module Microsoft.Graph.Intune -Name *Certificate* | FT CommandType,Name
+Get-Command -Module Microsoft.Graph.Intune -Name *Cert* | FT CommandType,Name
 ```
 ![Filtered commands for certificates](/images/README/Get-Command-Filtered-Certificates.png)
