@@ -10,13 +10,16 @@
 
   
 # Intro
+[Back to top](#Table-of-Contents)
 This is a quick repo / self-reference "wiki" of sorts (more info will be added to the 'Wiki' for this repo!
   
 # What is the Intune PowerShell SDK
+[Back to top](#Table-of-Contents)
 It's a list of PowerShell cmdlets that connect directly to the Intune Graph API and lets you perform actions remotely via PowerShell instead of directly via Graph. 
   
 # Getting Started
 ## Setup
+[Back to top](#Table-of-Contents)
  - Install the Microsoft.Graph.Intune module the direct repo [here](https://www.powershellgallery.com/packages/Microsoft.Graph.Intune)
  - Alternatively, you can run this from a PowerShell session that you ran as Admin using a single command.
 ```PowerShell
@@ -24,6 +27,7 @@ Install-Module -Name Microsoft.Graph.Intune
 ```
 ![Setup](images/README/install-module.gif)
 ## Uninstallation
+[Back to top](#Table-of-Contents)
 You can uninstall this PowerShell Module by simply running the below command:
 
 ```PowerShell
@@ -32,6 +36,7 @@ Uninstall-Module -Name Microsoft.Graph.Intune
 ![Uninstallation](images/README/remove-module.png)
 
 ## Connecting to the Intune Service
+[Back to top](#Table-of-Contents)
 ```PowerShell
 Connect-MSGraph
 ```
@@ -42,6 +47,7 @@ Note - other features, such as Conditional Access, can block this.
 Make sure you connect using a **Global Administrator** account. 
 
 # Seeing available commands
+[Back to top](#Table-of-Contents)
 You can use the following line to retrieve all commands available in the module (once connected)
 ```PowerShell
 Get-Command -Module Microsoft.Graph.Intune
@@ -57,3 +63,5 @@ For example - I want a nice table of commands that are related to certificates.
 Get-Command -Module Microsoft.Graph.Intune -Name *Cert* | FT CommandType,Name
 ```
 ![Filtered commands for certificates](/images/README/Get-Command-Filtered-Certificates.png)
+
+[Back to top](#Table-of-Contents)
