@@ -1,12 +1,12 @@
 # Table of Contents
-- [Table of Contents](#Table-of-Contents)
-- [Intro](#Intro)
-- [What is the Intune PowerShell SDK?](#What-is-the-Intune-PowerShell-SDK)
-- [Getting Started](#Getting-Started)
-  - [Setup](#Setup)
-    - [Uninstallation](#Uninstallation)
-  - [Connecting to the Intune Service](#Connecting-to-the-Intune-Service)
-- [Seeing available commands](#Seeing-available-commands)
+- [Table of Contents](#table-of-contents)
+- [Intro](#intro)
+- [What is the Intune PowerShell SDK?](#what-is-the-intune-powershell-sdk)
+- [Getting Started](#getting-started)
+  - [Setup](#setup)
+    - [Uninstallation](#uninstallation)
+  - [Connecting to the Intune Service](#connecting-to-the-intune-service)
+- [Seeing available commands](#seeing-available-commands)
 
   
 # Intro
@@ -15,13 +15,13 @@
 This is a quick repo / self-reference "wiki" of sorts (more info will be added to the 'Wiki' for this repo!
   
 # What is the Intune PowerShell SDK
-[Back to top](#Table-of-Contents)
+[Back to top](#table-of-contents)
 
 It's a list of PowerShell cmdlets that connect directly to the Intune Graph API and lets you perform actions remotely via PowerShell instead of directly via Graph. 
   
 # Getting Started
 ## Setup
-[Back to top](#Table-of-Contents)
+[Back to top](#table-of-contents)
 
  - Install the Microsoft.Graph.Intune module the direct repo [here](https://www.powershellgallery.com/packages/Microsoft.Graph.Intune)
  - Alternatively, you can run this from a PowerShell session that you ran as Admin using a single command.
@@ -30,7 +30,7 @@ Install-Module -Name Microsoft.Graph.Intune
 ```
 ![Setup](images/README/install-module.gif)
 ## Uninstallation
-[Back to top](#Table-of-Contents)
+[Back to top](#table-of-contents)
 
 You can uninstall this PowerShell Module by simply running the below command:
 
@@ -40,7 +40,7 @@ Uninstall-Module -Name Microsoft.Graph.Intune
 ![Uninstallation](images/README/remove-module.png)
 
 ## Connecting to the Intune Service
-[Back to top](#Table-of-Contents)
+[Back to top](#table-of-contents)
 
 ```PowerShell
 Connect-MSGraph
@@ -52,7 +52,7 @@ Note - other features, such as Conditional Access, can block this.
 Make sure you connect using a **Global Administrator** account. 
 
 # Seeing available commands
-[Back to top](#Table-of-Contents)
+[Back to top](#table-of-contents)
 
 You can use the following line to retrieve all commands available in the module (once connected)
 ```PowerShell
@@ -70,5 +70,5 @@ Get-Command -Module Microsoft.Graph.Intune -Name *Cert* | FT CommandType,Name
 ```
 ![Filtered commands for certificates](/images/README/Get-Command-Filtered-Certificates.png)
 
-[Back to top](#Table-of-Contents)
+[Back to top](#table-of-contents)
 
