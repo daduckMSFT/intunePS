@@ -12,7 +12,7 @@
 # Intro
 [Back to top](#table-of-contents)
 
-This is a quick repo / self-reference "wiki" of sorts (more info will be added to the 'Wiki' for this repo!
+This is a quick repo / self-reference "wiki" of sorts (more info will be added to the 'Wiki' for this repo!)
   
 # What is the Intune PowerShell SDK
 [Back to top](#table-of-contents)
