@@ -138,7 +138,7 @@ It then exports this list into a CSV with the name you chose #>
     if($deletionConfirm -like "Yes" -or $deletionConfirm -like "Y") {
         SpacingBars
         Write-Host "Deleting devices..." 
-        Write-Host "$devicesToDelete | Remove-IntuneManagedDevice"
+        $devicesToDelete | Remove-IntuneManagedDevice
         Write-Host (Connect-MSGraph).UPN -ForegroundColor Cyan -BackgroundColor DarkMagenta -NoNewline;Write-Host " deleted $targetDeleteCount devices on " -NoNewline; Write-Host (Get-Date) "`n" -ForegroundColor Green
         } 
     else {
