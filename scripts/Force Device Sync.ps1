@@ -80,7 +80,7 @@ Clear-Host
     Write-Host "                          " -NoNewline; Write-Host "$totalAndroidDeviceCount Android" -ForegroundColor Magenta -BackgroundColor Black;
     Write-Host "                          " -NoNewline; Write-Host "$totalWindowsDeviceCount Windows" -ForegroundColor Cyan -BackgroundColor Black;
     SpacingBars
-    Write-Host "Note - these numbers are not updated immediately, and are periodically updated." 
+    Write-Host "`nNote - these numbers are not updated immediately, and are periodically updated.`n" 
 
 <# Prompts you to select a platform to synchronize - Windows, Android, and iOS are the (3) platforms most commonly used.
     The "do until" loop requires Android, iOS, or Windows (case insensitive) - if you need to accept other platforms, simply edit this!

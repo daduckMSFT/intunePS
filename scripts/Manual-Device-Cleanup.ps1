@@ -80,7 +80,7 @@ Clear-Host
     Write-Host "                          " -NoNewline; Write-Host "$totalAndroidDeviceCount Android" -ForegroundColor Magenta -BackgroundColor Black;
     Write-Host "                          " -NoNewline; Write-Host "$totalWindowsDeviceCount Windows" -ForegroundColor Cyan -BackgroundColor Black;
     SpacingBars
-    Write-Host "Note - these numbers are not updated immediately, and are periodically updated." 
+    Write-Host "`nNote - these numbers are not updated immediately, and are periodically updated.`n" 
 
 <# This gathers the date - aka, if you want to chceck for devices that haven't checked in forr 60 days,  you would enter in 60 
 the $dateRange variable simply gets the current date, and subtracts the value entered here (eg; 60) from it #>
