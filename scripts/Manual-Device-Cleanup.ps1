@@ -69,10 +69,11 @@ Clear-Host
     ConnectToGraph
 
 <# Gather the total count of devices for visibility and write them to the console #>
-    $totalDeviceCount = (Get-IntuneManagedDevice).count
-    $totalIOSDeviceCount = (Get-IntuneManagedDevice | Where-Object {$_.operatingSystem -eq "iOS"}).count
-    $totalAndroidDeviceCount = (Get-IntuneManagedDevice | Where-Object {$_.operatingSystem -eq "Android"}).count
-    $totalWindowsDeviceCount = (Get-IntuneManagedDevice | Where-Object {$_.operatingSystem -eq "Windows"}).count
+    $deviceOverview = Get-IntuneManagedDeviceOverview
+    $totalDeviceCount = $deviceOverview.enrolledDeviceCount
+    $totalIOSDeviceCount = $deviceOverview.deviceOperatingSystemSummary.iosCount
+    $totalAndroidDeviceCount = $deviceOverview.deviceOperatingSystemSummary.androidCount
+    $totalWindowsDeviceCount = $deviceOverview.deviceOperatingSystemSummary.windowsCount
 
     Write-Host "Your tenant currently has " -NoNewline; Write-Host "$totalDeviceCount total" -NoNewLine -ForegroundColor Yellow -BackgroundColor Black; Write-Host " devices enrolled."
     Write-Host "                          " -NoNewline; Write-Host "$totalIOSDeviceCount iOS" -ForegroundColor White -BackgroundColor Black;
